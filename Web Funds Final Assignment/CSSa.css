@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    margin: 25px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px; 
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(home.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(19, 18, 18, 0.582);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(emissions.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(19, 18, 18, 0.582);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(goals.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(19, 18, 18, 0.582);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(action.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(19, 18, 18, 0.582);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner5 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(2030.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(19, 18, 18, 0.582);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(62, 126, 69);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.climate-img {
+    width: 30rem;
+    margin-left: 0px;
+    padding-top: 20px;
+    
+}
+
+.grid-container-two-columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    text-align:center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item {
+    padding: 20px;
+    width: 100%;
+    text-align: center;   
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.climate {
+    text-align: justify;
+    font-size: 25px;
+    font-weight:400;   
+}
+
+.climate-short-text{
+    text-align: center;
+    font-size: 25px;
+    font-weight:400;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.column img {
+    width: 100%;
+    justify-content: center;
+}
+
+.layer {
+    background: transparent;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.layer:hover {
+    background: whitesmoke;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .content h1 {
+        font-size: 30px;
+    }
+    .navbar ul li {
+        display: block;
+    }
+    .climate-img {
+        width: 60%;
+        margin-left: 70px;
+        display: block;
+    }
+    .climate {
+        text-align: left;
+        font-size: 5px;
+    }
+} 
+
+

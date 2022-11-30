@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Goal 13: Climate Action</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="/Cssc.css">
+        <script src="contact.js"></script>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <a href="Home.html"><img src="favicon.png"  class="logo"></a>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Emissions.html">Emissions</a></li>
+                <li><a href="Goals.html">Goals</a></li>
+                <li><a href="Current Action.html">Current Actions</a></li>
+                <li><a href="2030.html">2030</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="center">
+            <h2>Contact Us</h2>
+            <div id="error_message"></div>
+            
+            <form id="myform" onsubmit= "return validation()">
+                <div class="input_field">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input_field">
+                    <textarea id="message" placeholder="Message" id="message"></textarea>
+                </div>
+                <div class="button">
+                    <input type="submit">
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
